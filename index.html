@@ -1,0 +1,42 @@
+<html>
+
+  <head>
+    <title>Image Classification</title>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <link rel='stylesheet'>
+  </head>
+
+  <body>
+    <!-- set the background color and add header-->
+    <div style="background-color:lightblue">
+      <h1 style ="color:grey">Image classifier</h1>
+    </div>
+    <!-- <input type="file"> let the users to upload files from their device -->
+    <!-- <input id="file"> label input as "file" -->
+    <h3 class='upload'> Upload Your Image Here </h3>
+      <input type="file" id="file" accept="image/*" placeholder="Upload Your Image" onchange="loadFile(event)"/>
+    <div class="display">
+      <img id="img-output" height="277" width="277"/>
+    </div>
+    <div class="submit">
+      <!-- <input type="submit"> submit file -->
+      <!-- <input value="some_text"> write "some_test" in the botton to click submit -->
+      <!-- and store input in "some_text value. The default of value is "submit" -->
+      <input type="submit" value="Classify this image" id="classify"/>
+    </div>
+
+    <div class="response">
+      <!-- display prediction -->
+      <div id="answer"></div>
+    </div>
+
+
+    <script src="index.js"></script>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>
+
+  </body>
+
+</html>
